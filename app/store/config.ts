@@ -53,7 +53,7 @@ export const DEFAULT_CONFIG = {
 
   disablePromptHint: false,
 
-  dontShowMaskSplashScreen: false, // dont show splash screen when create chat
+  dontShowMaskSplashScreen: true, // dont show splash screen when create chat
   hideBuiltinMasks: false, // dont add builtin masks
 
   customModels: "",
@@ -64,13 +64,13 @@ export const DEFAULT_CONFIG = {
     avatarEmoji: "",
     contentType: "Text" as ModelContentType,
     messageStruct: "normal" as ModelMessageStruct,
-    temperature: 0.5,
-    top_p: 1,
+    temperature: 0.6,
+    top_p: 0.8,
     max_tokens: 4000,
-    presence_penalty: 0,
+    presence_penalty: 0.5,
     frequency_penalty: 0,
     sendMemory: true,
-    historyMessageCount: 4,
+    historyMessageCount: 8,
     compressMessageLengthThreshold: 1000,
     enableInjectSystemPrompts: true,
     template: DEFAULT_INPUT_TEMPLATE,
